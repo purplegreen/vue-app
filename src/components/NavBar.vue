@@ -1,6 +1,6 @@
   <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="brand">Giraffe's Events</router-link>
+    <router-link to="/" class="brand">Multi Path Guided Walk</router-link>
     <nav>
       <div id="nav">
         <router-link :to="{ name: 'event-list' }">List</router-link>|

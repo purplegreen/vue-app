@@ -1,0 +1,70 @@
+{
+  "walkpaths": [
+    {
+      "id": 1,
+      "title": "Along The Beach",
+      "tipology": "walk",
+      "category": "listening",
+      "flow": "relaxing",
+      "duration": "22 min",
+      "slots": [
+        {
+          "id": "abc123",
+          "name": "biotope"
+        },
+        {
+          "id": "abc124",
+          "name": "minerals"
+        },
+        {
+          "id": "abc125",
+          "name": "trees"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "experiencer": {
+        "id": "abc123",
+        "name": "Mina"
+      },
+      "title": "Under A tree",
+      "tipology": "seated",
+      "category": "meditation",
+      "flow": "meditative",
+      "duration": "11 min",
+      "slots": [
+        {
+          "id": "abc126",
+          "name": "storytelling"
+        },
+        {
+          "id": "abc127",
+          "name": "breathing"
+        },
+        {
+          "id": "abc128",
+          "name": "foocus"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "experiencer": {
+        "id": "abc123",
+        "name": "Mina"
+      },
+      "title": "In The Water",
+      "tipology": "swimming",
+      "category": "floating",
+      "flow": "meditative",
+      "duration": "16 min",
+      "slots": [
+        {
+          "id": "abc129",
+          "name": "let it go"
+        }
+      ]
+    }
+  ]
+}

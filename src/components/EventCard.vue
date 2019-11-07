@@ -1,29 +1,17 @@
 <template>
-  <router-link class="event-link" :to="{ name: 'event-show', params: { id: '1' } }">
+  <router-link class="event-link" :to="{ name: 'event-show', params: { id: walkpath.id } }">
     <div class="event-card -shadow">
-      <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
-      <h4 class="title">{{ event.title }}</h4>
-      <BaseIcon name="walkicon" />
-      <span>{{ event.legiraffe.lenght }} giraffano</span>
+      <span class="eyebrow">@{{ walkpath.duration }} on {{ walkpath.flow }}</span>
+      <h4 class="title">{{ walkpath.title }}</h4>
+      <BaseIcon name="walkicon">{{ walkpath.slots.lenght }} Walk Slots</BaseIcon>
     </div>
   </router-link>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      event: {
-        id: 1,
-        title: "Giraffe",
-        date: "Tue Oct 30 2019",
-        time: "15:00",
-        legiraffe: [
-          { id: "abc123", name: "Lena" },
-          { id: "def456", name: "Pina" }
-        ]
-      }
-    };
+  props: {
+    walkpath: Object
   }
 };
 </script>
