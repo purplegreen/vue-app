@@ -12,5 +12,8 @@ const apiClient = axios.create({
 export default {
   getWalkpaths() {
     return apiClient.get("/walkpaths");
+  },
+  getWalkpath(id) {
+    return apiClient.get("/walkpaths/" + id);
   }
 };
