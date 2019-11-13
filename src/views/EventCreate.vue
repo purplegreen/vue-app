@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Create Event, {{ user.name }}</h1>
+    <h1>Create Walkpath, {{ user.name }}</h1>
     <p>and again this nice name {{ user.name }}</p>
     <p>{{ getWalkpathById(4) }}</p>
   </div>
