@@ -1,9 +1,20 @@
 <template>
-  <h1>Create Event</h1>
+  <div>
+    <h1>Create Event, {{ user.name }}</h1>
+    <p>and again this nice name {{ user.name }}</p>
+    <p>{{ getWalkpathById(4) }}</p>
+  </div>
 </template>
 
 <script>
-export default {};
+import { mapState, mapGetters } from "vuex";
+
+export default {
+  computed: {
+    ...mapGetters(["getWalkpathById"]),
+    ...mapState(["user", "categories"])
+  }
+};
 </script>
 
 <style>
