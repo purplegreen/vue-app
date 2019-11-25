@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import WalkPathService from "../services/WalkPathService.js";
 
 Vue.use(Vuex);
 
@@ -22,8 +23,17 @@ export default new Vuex.Store({
       { id: 4, title: "Yellow Sand", duration: "9min" }
     ]
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    ADD_WALKPATH(state, walkpath) {
+      state.walkpaths.push(walkpath);
+    }
+  },
+  actions: {
+    createWalkpath({ commit }, walkpath) {
+      WalkPathService.postWalkpath(walkpath);
+      commit("ADD_WALKPATH", walkpath);
+    }
+  },
   getters: {
     getWalkpathById: state => id => {
       return state.walkpaths.find(walkpath => walkpath.id === id);

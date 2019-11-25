@@ -15,13 +15,13 @@ export default new VueRouter({
       component: EventList
     },
     {
-      path: "/event/:id",
-      name: "event-show",
+      path: "/walkpath/:id",
+      name: "walkpath-show",
       component: EventShow,
       props: true
     },
     {
-      path: "/event/create",
+      path: "/walkpath/create",
       name: "event-create",
       component: EventCreate
     }

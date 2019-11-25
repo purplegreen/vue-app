@@ -1,7 +1,11 @@
 <template>
   <div>
     <h1>walkpaths Listing</h1>
-    <EventCard v-for="walkpath in walkpaths" :key="walkpath.id" :walkpath="walkpath" />
+    <EventCard
+      v-for="walkpath in walkpaths"
+      :key="walkpath.id"
+      :walkpath="walkpath"
+    />
   </div>
 </template>
 
@@ -30,5 +34,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

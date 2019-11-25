@@ -15,5 +15,8 @@ export default {
   },
   getWalkpath(id) {
     return apiClient.get("/walkpaths/" + id);
+  },
+  postWalkpath(walkpath) {
+    return apiClient.post("/walkpaths", walkpath);
   }
 };
